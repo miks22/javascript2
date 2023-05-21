@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+
+}
+
+.hero{
+    width: 80%;
+    margin: auto;
+}
+
+.navbar{
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    flex: 1;
+    text-align: right;
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 25px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+    position: relative;
+}
+
+ul li a::after{
+    content: '';
+    width: 0;
+    height: 10px;
+    background: #f14a60;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -55px;
+    transform: 0.5s;
+}
+
+ul li a:hover::after{
+    width: 100%;
+}
+
+
+
+.box {
+    width: 1200px;
+    height: 200px;
+    background-color: rgb(255, 0, 102);
+    background-image: url(backgground2.jpg);
+    background-size: 1200px 200px;
+}
+
+.title {
+    color: white;
+    font-style: italic;
+}
+
+.paragraph {
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.btn button {
+    padding: 7px 30px;
+    margin-right: 15px;
+    outline: none;
+    border: 1px solid #fb7381;
+    background: linear-gradient(#fb7381, #f14a60);
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 150px;
+    cursor: pointer;
+    
+}
+.btn button:hover{
+ color: darkblue;
+}
+
+.btn .primary-btn{
+    background: linear-gradient(#fb7381, #f14a60);
+}
+
+.starts{
+    font-size: 30px;
+    font-style: italic;
+}
+
+.clm {
+    float: left;
+    width: 33.33%;
+    padding: 3px;
+}
+
+.clm img{
+    height: 350px;
+}
+
+
+.apraksts{
+    text-align: center;
+}
+
+.advert{
+    text-align: center;
+    margin-top: 70px;
+    width: 1200px;
+    height: 200px;
+    background-color:cornflowerblue;
+    font-size: 50px;
+    font-style: italic;
+}
+
+.btnn button{
+    padding: 7px 30px;
+    margin-right: 15px;
+    outline: none;
+    border: 1px solid #fb7381;
+    background: linear-gradient(#fb7381, #f14a60);
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 150px;
+    align-content: center;
+    cursor: pointer;
+}
+
+.slider {
+    width: 100%;
+    position: relative;
+    color: black;
+}
+
+.slider__image {
+    width: 100%;
+    height: 400px;
+}
+
+.slider__prev, .slider__next {
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    top: 50%;
+    line-height: 1;
+
+}
+
+.slider__prev {
+    left: -20px;
+}
+
+.slider__next{
+right: -20px;
+}
+
+.slider__prev:hover,
+.slider__next:hover {
+    transition: color 0.2s;
+    cursor: pointer;
+    color: blue;
+}
+
+.slider__dots{
+width: 100%;
+position: absolute;
+bottom: 0;
+left: 0;
+padding: 10px 0;
+z-index: 2;
+text-align: center;
+}
+
+.slider__dot{
+    display: inline-block;
+width: 20px;
+height: 20px;
+border: 2px solid blue;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.slider__dot:hover, .slider__dot.active {
+    transition: background-color 0.2s;
+    background-color: blue;
+}
+
+.contento {
+    color: black;
+}
+
+.contento_list {
+    list-style-type: square;
+}
+
+.content__table {
+    border: 2px solid blueviolet;
+}
+
+.content__table th, .content__table td {
+    border: 2px solid blueviolet;
+    padding: 10px;
+}
+
+.footer {
+    background-color: burlywood;
+    padding: 10px 0 25px 0;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.image {
+    display: none;
+}
+
+.image.active {
+    display: block;
+}
